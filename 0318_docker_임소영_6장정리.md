@@ -17,13 +17,21 @@
 
 ## 6.3 클라우드 서비스를 사용한 브라이빗 레지스트리 구축
 - GCP Container Registry : 구글 GCP 활성화, 프로젝트 생성, API라이브러리(Container Registry)설정
+
 - gcloud 사용준비
-참조 : https://cloud.google.com/sdk/docs/quickstart-debian-ubuntu
+
+- 참조 : https://cloud.google.com/sdk/docs/quickstart-debian-ubuntu
+
 $ sudo echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] http://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
+
 $ sudo curl https://packages.cloud.google.com/apt/doc/apt-key.gpg |  apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
+
 $ sudo apt-get update && sudo apt-get install google-cloud-sdk
--gcloud 초기설정
+
+- gcloud 초기설정
+
  $ gcloud init
+
  $ gcloud auth login
 	project ID: solar-muse-271408
 	zone : asia-east2-c
