@@ -384,6 +384,7 @@ ENTRYPOINT : 명령은 반드시 컨테이너에서 실행됨
 * `docker-compose` 명령 사용을 위해서는 'docker-compose.yml' 또는 'docker-compose.yaml' 파일이 필요(같은 디렉터리내에 존재)
     - '-f' 옵션을 사용해 정의 파일명 지정 가능
 * Docker Compose의 주요 서브 명령
+
 | 서브 명령 | 설명                        |
 | --- | --- |
 | up        | 컨테이너 생성/시작          |
@@ -443,7 +444,8 @@ https://docs.docker.com/compose/reference/
 
 ## 8.3. Docker Machine을 사용한 실행 환경 구축
 1. Docker Machine의 명령어
-| 서브 명령 | 설명                        |
+
+| 서브 명령 | 설명                       |
 | :---: | --- |
 |  create   | 실행 환경 작성              |
 |    ls     | 실행 환경 목록 표시         |
